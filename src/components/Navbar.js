@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <nav className="navbar navbar-expand-lg navbar-dark" style={{backgroundColor:'#2a7fba'}}>
             <div className="container-fluid">
                 <Link className="navbar-brand" to="/">Book a Doctor</Link>
                 <button
