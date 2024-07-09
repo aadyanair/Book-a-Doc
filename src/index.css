@@ -63,3 +63,19 @@ form label{
 *:focus{
   outline:none;
 }
+
+.loginRedirectLink{
+  font-style: italic;
+  color: darkblue;
+  cursor: pointer;
+  text-decoration: underline;
+  text-align: center;
+}
+.signLogBtn{
+  background: #10476e;
+  border-radius: 100px;
+  padding: 0 10px;
+  margin: 0 10px;
+  color: white;
+  box-shadow: 3px 2px 10px #288099;
+}

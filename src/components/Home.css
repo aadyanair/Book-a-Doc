@@ -22,6 +22,10 @@
     bottom: 0;
     background: rgba(0, 0, 0, 0.5); /* Add a dark overlay for better text readability */
 }
+.hero-section .container{
+    margin-top: 40vh;
+    background: linear-gradient(to right, #00000000, black, #00000000 );
+}
 
 .container {
     position: relative;

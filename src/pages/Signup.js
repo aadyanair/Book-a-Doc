@@ -1,6 +1,7 @@
 // src/pages/Signup.js
 import React from 'react';
 import IndianStates from '../components/IndianStates';
+import { Link } from "react-router-dom";
 
 const Signup = () => {
     return (
@@ -23,6 +24,11 @@ const Signup = () => {
             Create Account
           </button>
         </form>
+        <h5 className="loginRedirectLink">
+          <Link className="nav-link" to="/login">
+            Already have an account? <br/> Login
+          </Link>
+        </h5>
       </div>
     );
 };
