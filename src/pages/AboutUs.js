@@ -23,7 +23,7 @@ const AboutUs = () => {
                 <ul className='team-list'>
                     <li>Aadya Nair</li>
                     <li>Naveen George Joseph</li>
-                    <li>Mihir Bani</li>
+                    <li>Mihir Rana</li>
                     <li>Snigdha</li>
                 </ul>
             </section>
