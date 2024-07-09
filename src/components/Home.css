@@ -6,11 +6,11 @@
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background-image: url('../assets/Doc2.jpg');
+    background-image: url('../assets/Doc2.png');
     background-size: cover;
     background-position: center top; /* Adjust this to 'center top' to show the top part of the image */
     background-repeat: no-repeat;
-    min-height: 500px; /* Ensure a minimum height to avoid cropping */
+    min-height: 100vh; /* Ensure a minimum height to avoid cropping */
 }
 
 .hero-section::before {
@@ -26,6 +26,7 @@
 .container {
     position: relative;
     z-index: 2;
+    padding: 20px;
 }
 
 .hero-heading {

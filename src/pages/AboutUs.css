@@ -3,20 +3,22 @@
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #f9f9f9;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
 .about-us-container h2 {
     margin-bottom: 20px;
     font-size: 2.5em;
+    text-align: center;
 }
 
 .about-us-container section {
     margin-bottom: 20px;
-    text-align: left;
+    text-align: justify;
+    box-shadow: 3px 2px 5px #076079;
+    border-radius: 10px;
+    padding: 20px;
 }
 
 .about-us-container section h3 {
