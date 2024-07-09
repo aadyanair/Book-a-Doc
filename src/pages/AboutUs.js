@@ -16,7 +16,7 @@ const AboutUs = () => {
             </section>
             <section>
                 <h3>Our Story</h3>
-                <p>Our journey began with a simple idea: to eliminate the hassle of booking doctor appointments. Since our inception in [Year], we've grown into a comprehensive healthcare platform, partnering with numerous healthcare providers to bring you the best services.</p>
+                <p>Our journey began with a simple idea: to eliminate the hassle of booking doctor appointments. Since our inception in 2024, we've grown into a comprehensive healthcare platform, partnering with numerous healthcare providers to bring you the best services.</p>
             </section>
             <section>
                 <h3>Our Team</h3>
