@@ -1,11 +1,12 @@
 // src/components/Navbar.js
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Navbar.css'; //Import the CSS file
 
 const Navbar = () => {
     return (
       <nav
-        className="navbar navbar-expand-lg navbar-dark"
+        className="navbar navbar-expand-lg navbar-dark fixed-top"
         style={{ backgroundColor: "#2a7fba" }}
       >
         <div className="container-fluid">
