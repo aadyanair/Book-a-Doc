@@ -1,6 +1,6 @@
 /* src/components/AboutUs.css */
 .about-us-container {
-    max-width: 800px;
+    max-width: 80vw;
     margin: 0 auto;
     padding: 20px;
     border-radius: 8px;
@@ -10,21 +10,25 @@
 .about-us-container h2 {
     margin-bottom: 20px;
     font-size: 2.5em;
+    letter-spacing: 2px;
+    font-weight: 800;
     text-align: center;
 }
 
 .about-us-container section {
     margin-bottom: 20px;
     text-align: justify;
-    box-shadow: 3px 2px 5px #076079;
     border-radius: 10px;
-    padding: 20px;
+    padding: 20px 50px;
+    font-weight: 600;
+    background: linear-gradient(to right,#00000000, #5fb3cc,#00000000);
 }
 
 .about-us-container section h3 {
     color: #2a7fba;
     font-size: 1.8em;
     margin-bottom: 10px;
+    font-weight: 700;
 }
 
 .about-us-container p,
@@ -52,4 +56,14 @@
     margin: 5px 0;
     font-size: 1.2em;
     font-weight: bold;
+}
+
+.bgImg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    opacity: 10%;
+    z-index: -1;
 }

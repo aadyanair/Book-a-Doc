@@ -35,6 +35,11 @@ const Navbar = () => {
                   About Us
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/DoctorSearch">
+                  Find Doctors
+                </Link>
+              </li>
               <li className="nav-item signLogBtn">
                 <Link className="nav-link" to="/signup">
                   Signup / Login
