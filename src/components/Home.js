@@ -21,6 +21,21 @@ const Home = () => {
                     <h2>Why Choose Us?</h2>
                     <p>Our platform connects you with top healthcare providers, making it simple to find the perfect match for your needs.</p>
                     <p>With our user-friendly interface, you can browse through a wide range of doctors and healthcare professionals, ensuring you get the best care possible.</p>
+                    <h3>Features</h3>
+                    <ul className="features-list">
+                        <li>Easy online booking</li>
+                        <li>Wide range of healthcare providers</li>
+                        <li>24/7 availability</li>
+                        <li>Secure and private</li>
+                    </ul><p>Our platform connects you with top healthcare providers, making it simple to find the perfect match for your needs.</p>
+                    <p>With our user-friendly interface, you can browse through a wide range of doctors and healthcare professionals, ensuring you get the best care possible.</p>
+                    <h3>Features</h3>
+                    <ul className="features-list">
+                        <li>Easy online booking</li>
+                        <li>Wide range of healthcare providers</li>
+                        <li>24/7 availability</li>
+                        <li>Secure and private</li>
+                    </ul>
                 </div>
             </section>
 
