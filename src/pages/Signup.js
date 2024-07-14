@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Signup = () => {
     return (
-      <div>
+      <div className='signupContainer'>
         <h2 className="center headingText">Signup</h2>
         <form className="flexCol">
           <input type="text" placeholder="Full Name" />
