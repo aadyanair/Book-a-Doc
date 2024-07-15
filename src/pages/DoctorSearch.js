@@ -179,10 +179,14 @@ const DoctorSearch = () => {
                   className="form-select"
                 >
                   <option value="">Select specialty</option>
-                  <option value="dermatology">Dermatology</option>
-                  <option value="general surgery">General Surgery</option>
-                  <option value="dental">Dental</option>
-                  <option value="eye">Eye</option>
+                  <option value="Cardiology">Cardiology</option>
+                  <option value="Dermatology">Dermatology</option>
+                  <option value="Neurology">Neurology</option>
+                  <option value="Gynecology">Gynecology</option>
+                  <option value="Ophthalmology">Ophthalmology</option>
+                  <option value="Orthopedic">Orthopedic</option>
+                  <option value="Pediatrics">Pediatrics</option>
+                  <option value="Radiology">Radiology</option>
                 </select>
               </div>
               <div className="form-group">

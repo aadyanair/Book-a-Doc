@@ -8,7 +8,7 @@ const itemSchema = new mongoose.Schema({
   location: {
     type: String,
   },
-  doctors: {
+  name: {
     type: String,
   },
 });

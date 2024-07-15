@@ -1,7 +1,6 @@
 const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 3000;
-
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
 const mongoose = require("mongoose");
@@ -12,9 +11,7 @@ mongoose.connect(
     useUnifiedTopology: true,
   }
 );
-
-const Item = require("./models/Item"); // Create the Item model
-
+const Item = require("./models/item"); // Create the Item model
 app.get("/api/items", async (req, res) => {
   try {
     const items = await Item.find();
@@ -24,3 +21,4 @@ app.get("/api/items", async (req, res) => {
     res.status(500).send("Server Error");
   }
 });
+
