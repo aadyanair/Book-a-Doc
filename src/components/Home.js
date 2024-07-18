@@ -11,7 +11,7 @@ const Home = () => {
                 <div className="container">
                     <h1 className="hero-heading">Booking a Doctor's Appointment Made Easy</h1>
                     <p className="hero-text">Schedule your appointments online, quickly and conveniently, from the comfort of your home.</p>
-                    <Link to="/signup" className="btn btn-primary">Get Started</Link>
+                    <Link to="/DoctorSearch" className="btn btn-primary">Get Started</Link>
                 </div>
             </section>
 

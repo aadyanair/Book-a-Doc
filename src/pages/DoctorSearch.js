@@ -13,9 +13,27 @@ const DoctorSearch = () => {
         console.log(`Searching for doctors with specialty: ${specialty} in location: ${location}`);
 
         const fetchedDoctors = [
-            { id: 1, name: 'Dr. Naveen', specialty: specialty, location: location, availableSlots: ['9am', '10am', '11am', '12pm'] },
-            { id: 2, name: 'Dr. Aadiya', specialty: specialty, location: location, availableSlots: ['2pm', '3pm', '4pm', '5pm'] },
-
+          {
+            id: 1,
+            name: "Dr. Gupta",
+            specialty: specialty,
+            location: location,
+            availableSlots: ["9am", "10am", "11am", "12pm", "1pm", "2pm"],
+          },
+          // {
+          //   id: 2,
+          //   name: "Dr. Naveen",
+          //   specialty: specialty,
+          //   location: location,
+          //   availableSlots: ["2pm", "3pm", "4pm", "5pm"],
+          // },
+          // {
+          //   id: 2,
+          //   name: "Dr. Sharma",
+          //   specialty: specialty,
+          //   location: location,
+          //   availableSlots: ["2pm", "3pm", "4pm", "5pm"],
+          // },
         ];
         setDoctors(fetchedDoctors);
     };
@@ -31,6 +49,10 @@ const DoctorSearch = () => {
             .then((response) => setItems(response.data))
             .catch((error) => console.error(error));
     }, []);
+
+    const sayHello = () => {
+      alert("Appointment booked with Dr.Gupta at 2pm");
+    };
 
     return (
       <div>
@@ -199,11 +221,37 @@ const DoctorSearch = () => {
                   onChange={(e) => setLocation(e.target.value)}
                   className="form-select"
                 >
-                  <option value="">Select location</option>
-                  <option value="delhi">Delhi</option>
-                  <option value="himachal">Himachal</option>
-                  <option value="punjab">Punjab</option>
-                  <option value="shimla">Shimla</option>
+                  <option value="Select">Select State</option>
+                  <option value="Andhra Pradesh">Andhra Pradesh</option>
+                  <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                  <option value="Assam">Assam</option>
+                  <option value="Bihar">Bihar</option>
+                  <option value="Chandigarh">Chandigarh</option>
+                  <option value="Chhattisgarh">Chhattisgarh</option>
+                  <option value="Delhi">Delhi</option>
+                  <option value="Goa">Goa</option>
+                  <option value="Gujarat">Gujarat</option>
+                  <option value="Haryana">Haryana</option>
+                  <option value="Himachal Pradesh">Himachal Pradesh</option>
+                  <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                  <option value="Jharkhand">Jharkhand</option>
+                  <option value="Karnataka">Karnataka</option>
+                  <option value="Kerala">Kerala</option>
+                  <option value="Madhya Pradesh">Madhya Pradesh</option>
+                  <option value="Maharashtra">Maharashtra</option>
+                  <option value="Manipur">Manipur</option>
+                  <option value="Meghalaya">Meghalaya</option>
+                  <option value="Mizoram">Mizoram</option>
+                  <option value="Nagaland">Nagaland</option>
+                  <option value="Odisha">Odisha</option>
+                  <option value="Puducherry">Puducherry</option>
+                  <option value="Punjab">Punjab</option>
+                  <option value="Rajasthan">Rajasthan</option>
+                  <option value="Sikkim">Sikkim</option>
+                  <option value="Tamil Nadu">Tamil Nadu</option>
+                  <option value="Tripura">Telangana</option>
+                  <option value="Uttar Pradesh">Uttar Pradesh</option>
+                  <option value="Uttarakhand">Uttarakhand</option>
                 </select>
               </div>
               <div className="form-group">
@@ -232,7 +280,7 @@ const DoctorSearch = () => {
                     </div>
                   ))}
                 </div>
-                <button className="book-button">Book Doctor</button>
+                <button className="book-button" onClick={sayHello}>Book Doctor</button>
               </div>
             ))}
           </div>

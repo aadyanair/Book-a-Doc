@@ -41,11 +41,16 @@ const Navbar = () => {
                   Find Doctors
                 </Link>
               </li>
-              <li className="nav-item signLogBtn">
+              <li className="nav-item">
+                <Link className="nav-link" to="/Account">
+                  Account
+                </Link>
+              </li>
+              {/* <li className="nav-item signLogBtn">
                 <Link className="nav-link" to="/signup">
                   Signup / Login
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

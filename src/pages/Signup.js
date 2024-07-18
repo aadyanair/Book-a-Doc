@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Signup = () => {
     return (
-      <div className='signupContainer'>
+      <div className="signupContainer">
         <h2 className="center headingText">Signup</h2>
         <form className="flexCol">
           <input type="text" placeholder="Full Name" />
@@ -21,12 +21,14 @@ const Signup = () => {
           <input type="email" placeholder="Email" />
           <input type="password" placeholder="Password" />
           <button className="blueButton" type="submit">
-            Create Account
+            <Link className="nav-link" to="/">
+              Create Account
+            </Link>
           </button>
         </form>
         <h5 className="loginRedirectLink">
           <Link className="nav-link" to="/login">
-            Already have an account? <br/> Login
+            Already have an account? <br /> Login
           </Link>
         </h5>
       </div>
