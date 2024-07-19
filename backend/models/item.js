@@ -2,7 +2,7 @@ const { type } = require("@testing-library/user-event/dist/type");
 const mongoose = require("mongoose");
 
 const itemSchema = new mongoose.Schema({
-  speciality: {
+  specialty: {
     type: String,
   },
   location: {

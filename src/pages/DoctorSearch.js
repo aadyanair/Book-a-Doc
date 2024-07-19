@@ -3,20 +3,27 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 const DoctorSearch = () => {
-    const [items, setItems] = useState([]);
+    // const [items, setItems] = useState([]);
     const [specialty, setSpecialty] = useState('');
     const [location, setLocation] = useState('');
     const [doctors, setDoctors] = useState([]);
 
-    const handleSearch = async (e) => {
-        e.preventDefault();
-        console.log(`Searching for doctors with specialty: ${specialty} in location: ${location}`);
+    const handleSearch = async () => {
+       
+        
 
-        const fetchedDoctors = [
-            { id: 1, name: 'Dr. Naveen', specialty: specialty, location: location, availableSlots: ['9am', '10am', '11am', '12pm'] },
-            { id: 2, name: 'Dr. Aadiya', specialty: specialty, location: location, availableSlots: ['2pm', '3pm', '4pm', '5pm'] },
+        const response = await fetch(`http://localhost:3000/findDoctor?location=${encodeURIComponent(location)}&specialty=${encodeURIComponent(specialty)}`);
+        const data = await response.json();
 
-        ];
+        // Format the fetched data
+        const fetchedDoctors = data.map((doctor, index) => ({
+            id: doctor._id,
+            name: doctor.name,
+            specialty: doctor.specialty,
+            location: doctor.location,
+            availableSlots: doctor.availableSlots,
+        }));
+        console.log(fetchedDoctors);
         setDoctors(fetchedDoctors);
     };
 
@@ -25,12 +32,12 @@ const DoctorSearch = () => {
 
     };
 
-    useEffect(() => {
-        axios
-            .get("/api/items")
-            .then((response) => setItems(response.data))
-            .catch((error) => console.error(error));
-    }, []);
+    // useEffect(() => {
+    //     axios
+    //         .get("http://localhost:3000/api/items")
+    //         .then((response) => setItems(response.data))
+    //         .catch((error) => console.error(error));
+    // }, []);
 
     return (
       <div>
@@ -160,12 +167,13 @@ const DoctorSearch = () => {
           <div className="form-container">
             <h2 className="title">Find a Doctor</h2>
             <h2>
-              {items.map((item) => (
+              {/* {items.map((item) => (
                 <li key={item._id}>
-                  <h3>{item.speciality}</h3>
+                  <h3>{item.specialty}</h3>
                   <p>{item.location}</p>
                 </li>
-              ))}
+              ))} */}
+              hello
             </h2>
             <form onSubmit={handleSearch} className="form">
               <div className="form-group">
@@ -200,10 +208,11 @@ const DoctorSearch = () => {
                   className="form-select"
                 >
                   <option value="">Select location</option>
-                  <option value="delhi">Delhi</option>
+                  <option value="Delhi">Delhi</option>
                   <option value="himachal">Himachal</option>
                   <option value="punjab">Punjab</option>
                   <option value="shimla">Shimla</option>
+                  <option value="Andhra Pradesh">Andhra Pradesh</option>
                 </select>
               </div>
               <div className="form-group">
